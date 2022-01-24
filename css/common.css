@@ -1,0 +1,81 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+
+/* common */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', 'Noto Sans KR', sans-serif;
+    background: #ffffff;
+    font-size: 13px;
+    letter-spacing: -1px;
+    min-width: 320px;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.wrap {
+    width: 100%;
+    min-width: 320px;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    display: block;
+    height: 100%;
+}
+
+
+/* 공통 아이콘 */
+
+.mebership ul li:nth-child(1) .mem_icon,
+.mebership ul li:nth-child(2) .mem_icon,
+.mebership ul li:nth-child(3) .mem_icon,
+.mebership ul li:nth-child(4) .mem_icon,
+.notice i,
+.sns li:nth-child(1),
+.sns li:nth-child(2),
+.copy i {
+    background: url(../img/common_icon.webp) no-repeat;
+    background-size: 300px;
+}
+
+.my li:nth-child(1) span::before,
+.my li:nth-child(2) span::before,
+.my li:nth-child(3) span::before {
+    content: "";
+    background: url(../img/comm_btn_direct_menu.png) no-repeat;
+    display: block;
+    width: 22px;
+    height: 20px;
+    margin: 11px auto 10px;
+    background-size: auto 66px;
+}
+
+.a_sns_wrap ul li:nth-child(1),
+.a_sns_wrap ul li:nth-child(2) {
+    background: url(../img/btn_social.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: auto 30px;
+}
