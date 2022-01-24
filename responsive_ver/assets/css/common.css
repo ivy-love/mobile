@@ -1,0 +1,49 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+
+/* common */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', 'Noto Sans KR', sans-serif;
+    font-size: inherit;
+    letter-spacing: inherit;
+    min-width: 320px;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.m_vis {
+    display: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    display: block;
+    height: 100%;
+}
