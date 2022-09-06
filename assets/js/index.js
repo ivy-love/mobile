@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     //메인슬라이드 TweenMax
     var tween2 = TweenMax.to('.main_visual img', 0.5, {
-        y: '100%', //변경될 거
+        y: '100%',
     });
 
     var scene = new ScrollMagic.Scene({
@@ -51,9 +51,8 @@ $(document).ready(function () {
 
     //제품 메뉴
     var galleryThumbs = new Swiper('.pro_slide', {
-        slidesPerView: "auto", //텍스트는 따옴표 쓰기
+        slidesPerView: 'auto',
         spaceBetween: 0,
-        freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
     });
@@ -61,9 +60,29 @@ $(document).ready(function () {
     //제품슬라이드
     var swiper = new Swiper('.prd_slide', {
         thumbs: {
-            swiper: galleryThumbs //galleryThumbs 슬라이드와 연결시켜준다
+            swiper: galleryThumbs 
         }
     });
+
+    // fav 클릭이벤트
+    $('.fav_icon').click(function(){
+        $(this).toggleClass("click");
+
+        const count = document.querySelector('.count');
+        let number = Number(count.innerText);
+        
+        //클릭 시 카트 카운트 증가
+        if($(this).hasClass('click')) {
+            $(this).addClass("count");
+            number = number + 1;
+            count.innerText = number;
+            
+        } else if(!$(this).hasClass('click')) {
+            number = number - 1;
+            count.innerText = number;
+        }
+    });
+
 
 
     //나이키컬렉션
@@ -80,15 +99,15 @@ $(document).ready(function () {
 
 
     //매직스크롤
-    var controller = new ScrollMagic.Controller(); //컨트롤러는 모션 실행하기 위해서 한번만 쓰면 됨
+    var controller = new ScrollMagic.Controller();
 
     var tween1 = TweenMax.to('.intro h2', 0.5, {
-        left: -800, //완료될 모션, h2를 left-800으로 움직인다, 0.5초 간격으로
+        left: -800,
     });
 
     var scene = new ScrollMagic.Scene({
-        triggerElement: ".intro", //인트로에 왔을때
-        duration: "100%" //100%만큼 움직인다
+        triggerElement: ".intro",
+        duration: "100%"
     })
         .setTween(tween1)
         .addTo(controller)
@@ -120,4 +139,4 @@ $(document).ready(function () {
         freeMode: true,
     });
 
-})
+});
