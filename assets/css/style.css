@@ -41,28 +41,28 @@
     width: 100%;
     height: 100%;
 }
-.nav_wrap ul .hm i {
+.nav_wrap ul .hm .icon_hm {
     background: url(../img/home1.png) no-repeat;
     background-position: center;
     background-size: auto 25px;
     height: 55px;
     display: block;
 }
-.nav_wrap ul .sch i {
+.nav_wrap ul .sch .icon_sch {
     background: url(../img/search1.png) no-repeat;
     background-position: center;
     background-size: 22.5px;
     height: 55px;
     display: block;
 }
-.nav_wrap ul .my i {
+.nav_wrap ul .my .icon_my {
     background: url(../img/my1.png) no-repeat;
     background-position: center;
     background-size: auto 25px;
     height: 55px;
     display: block;
 }
-.nav_wrap ul .cart i {
+.nav_wrap ul .cart .icon_cart {
     background: url(../img/bag1.png) no-repeat;
     background-position: center;
     background-size: auto 25px;
