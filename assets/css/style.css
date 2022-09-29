@@ -610,6 +610,7 @@
     background: #ccc;
     position: absolute;
     bottom: 0;
+    left: 67px;
 }
 .copy_wrap {
     text-align: center;

@@ -56,7 +56,7 @@ a {
 .sns li:nth-child(1),
 .sns li:nth-child(2),
 .copy i {
-    background: url(../img/common_icon.webp) no-repeat;
+    background: url(../img/common_icon.png) no-repeat;
     background-size: 300px;
 }
 

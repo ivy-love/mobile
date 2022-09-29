@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIKE</title>
     
     <!-- FAVICON -->
@@ -20,24 +20,17 @@
     <meta property="og:url" content="http://ivylove.dothome.co.kr/portfolio/mobile_ver/mobile.html" />
     
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/swiper.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!-- SCRIPT -->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>    
-    <script src="assets/js/ScrollMagic.min.js"></script>
-    <script src="assets/js/TweenMax.min.js"></script>
-    <script src="assets/js/animation.gsap.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script>
-        document.cookie = "safeCookie1=foo; SameSite=Lax"; 
-        document.cookie = "safeCookie2=foo";  
-        document.cookie = "crossCookie=bar; SameSite=None; Secure";
-    </script>
+    <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>    
+    <script type="text/javascript" src="assets/js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -50,7 +43,7 @@
                     </h1>
                 </div>
                 <div class="hamberger_btn right">
-                    <a href="javascript:voil(0)" class="menu">menu</a>
+                    <a href="javascript:void(0)" class="menu">menu</a>
                 </div>
             </div>
         </header>
@@ -854,7 +847,7 @@
                         <p>나이키의 유투브 채널</p>
                         <div class="yt_wrap">
                             <div class="yt_iframe">
-                                <iframe title="Nike youtube" src="https://www.youtube.com/embed/U1yX7awE5P0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid7"></iframe>
+                                <!-- <iframe title="Nike youtube" src="https://www.youtube.com/embed/U1yX7awE5P0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid7"></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -947,6 +940,9 @@
                 </div>
             </div>
         </footer>
-    </div>    
+    </div> 
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="assets/js/animation.gsap.js"></script>       
 </body>
 </html>

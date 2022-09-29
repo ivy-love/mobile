@@ -4,14 +4,14 @@ $(document).ready(function () {
     $(".menu").click(function () {
         $('.aside_wrap').stop().animate({
             right: '0'
-        }, 450, 'easeOutQuart')
-    })
+        }, 450, 'easeOutQuart');
+    });
 
     $(".a_mypage .right").click(function () {
         $('.aside_wrap').stop().animate({
             right: '-100%'
-        }, 450, 'easeOutQuart')
-    })
+        }, 450, 'easeOutQuart');
+    });
 
 
     //메인슬라이드
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 
     //gnb
-    var swiper = new Swiper('.gnb', {
+    var swiper = new Swiper('.pro_slide', {
         direction: 'vertical',
         slidesPerView: 'auto',
         freeMode: true,
