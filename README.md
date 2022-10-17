@@ -18,6 +18,7 @@
 - **CSS**
 - **jQuery&Javascript**
 - **AOS library**
-- **SWIPER library**
+- **Swiper library**
+- **Scroll Magic library**
 - **Photoshop**
 - **illustration**
