@@ -16,7 +16,7 @@
 
 - **HTML**
 - **CSS**
-- **jQuery&Javascript**
+- **JQuery&Javascript**
 - **AOS library**
 - **Swiper library**
 - **Scroll Magic library**
