@@ -39,7 +39,6 @@ $(document).ready(function () {
 
     //gnb
     var swiper = new Swiper('.pro_slide', {
-        direction: 'vertical',
         slidesPerView: 'auto',
         freeMode: true,
         scrollbar: {
