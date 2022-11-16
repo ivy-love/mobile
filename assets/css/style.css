@@ -641,6 +641,7 @@
     padding-bottom: 8px;
     font-size: 16px;
     font-weight: 600;
+    line-height: 1.2;
 }
 .magazine .tab_item .sub_title {
     font-size: 13px;
@@ -745,6 +746,7 @@
 }
 .qna .qna_item .question .title {
     font-size: 16px;
+    line-height: 1.4;
 }
 .qna .qna_item .question .title.active {
     font-weight: 600;
