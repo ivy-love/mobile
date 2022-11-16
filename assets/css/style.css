@@ -322,8 +322,9 @@
     padding: 0 10%;
 }
 .slide_txt .slide_title {
-    font-size: 47px;
-    font-weight: bold;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
     color: #fff;
 }
 .slide_txt .sub_txt {
