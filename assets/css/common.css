@@ -9,7 +9,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Montserrat', 'Roboto', 'Noto Sans KR', sans-serif;
     background: #ffffff;
@@ -22,47 +21,26 @@ body {
     clear: both;
     display: block;
 }
-
 .left {
     float: left;
 }
-
 .right {
     float: right;
 }
-
-.wrap {
-    width: 100%;
-    min-width: 320px;
-}
-
 img {
     vertical-align: top;
 }
-
 a {
     display: block;
     height: 100%;
 }
-
-
-/* 공통 아이콘 */
-
-.mebership ul li:nth-child(1) .mem_icon,
-.mebership ul li:nth-child(2) .mem_icon,
-.mebership ul li:nth-child(3) .mem_icon,
-.mebership ul li:nth-child(4) .mem_icon,
-.notice i,
-.sns li:nth-child(1),
-.sns li:nth-child(2),
-.copy i {
-    background: url(../img/common_icon.png) no-repeat;
-    background-size: 300px;
+.visually_hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
-
-.my li:nth-child(1) span::before,
-.my li:nth-child(2) span::before,
-.my li:nth-child(3) span::before {
+.mypage_list .mypage_item span::before {
     content: "";
     background: url(../img/comm_btn_direct_menu.png) no-repeat;
     display: block;
@@ -71,9 +49,15 @@ a {
     margin: 11px auto 10px;
     background-size: auto 66px;
 }
-
-.a_sns_wrap ul li:nth-child(1),
-.a_sns_wrap ul li:nth-child(2) {
+.mebership ul li:nth-child(1) .mem_icon,
+.mebership ul li:nth-child(2) .mem_icon,
+.mebership ul li:nth-child(3) .mem_icon,
+.mebership ul li:nth-child(4) .mem_icon,
+footer .notice_wrap .icon {
+    background: url(../img/common_icon.png) no-repeat;
+    background-size: 300px;
+}
+.aside_sns_wrap .sns_item {
     background: url(../img/btn_social.png) no-repeat;
     width: 30px;
     height: 30px;

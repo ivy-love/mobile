@@ -1,20 +1,19 @@
 $(document).ready(function () {
 
-    //햄버거 버튼
-    $(".menu").click(function () {
-        $('.aside_wrap').stop().animate({
+    //btn_menu animate
+    $(".btn_menu").click(function () {
+        $('.aside_container').stop().animate({
             right: '0'
-        }, 450, 'easeOutQuart');
+        }, 200, 'easeOutQuart');
     });
 
-    $(".a_mypage .right").click(function () {
-        $('.aside_wrap').stop().animate({
+    $(".btn_close").click(function () {
+        $('.aside_container').stop().animate({
             right: '-100%'
-        }, 450, 'easeOutQuart');
+        }, 50, 'easeOutQuart');
     });
 
-
-    //메인슬라이드
+    //main_slide swiper
     var swiper = new Swiper('.main_slide', {
         speed: 1500,
         pagination: {
@@ -23,40 +22,15 @@ $(document).ready(function () {
         parallax: true,
     });
 
-
-    //메인슬라이드 TweenMax
-    var tween2 = TweenMax.to('.main_visual img', 0.5, {
-        y: '100%',
-    });
-
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".main_wrap",
-        duration: "100%"
-    })
-        .setTween(tween2)
-        .addTo(controller)
-
-
-    //gnb
-    var swiper = new Swiper('.pro_slide', {
-        slidesPerView: 'auto',
-        freeMode: true,
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        mousewheel: true,
-    });
-
-
-    //제품 메뉴
-    var galleryThumbs = new Swiper('.pro_slide', {
+    //prd_list swiper
+    var galleryThumbs = new Swiper('.prd_list', {
         slidesPerView: 'auto',
         spaceBetween: 0,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
     });
 
-    //제품슬라이드
+    //prd_slide swiper
     var swiper = new Swiper('.prd_slide', {
         thumbs: {
             swiper: galleryThumbs 
@@ -82,9 +56,7 @@ $(document).ready(function () {
         }
     });
 
-
-
-    //나이키컬렉션
+    //collection swiper
     var swiper = new Swiper('.collection_slide', {
         pagination: {
             el: '.collection_slide .swiper-pagination',
@@ -96,43 +68,79 @@ $(document).ready(function () {
         loop: true,
     });
 
+    // lookbook swiper
+    var swiper = new Swiper(".lookbook_wrap", {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+        slidesOffsetBefore: 15,
+        slidesOffsetAfter: 15,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+      });
 
-    //매직스크롤
-    var controller = new ScrollMagic.Controller();
+    //매거진 탭메뉴
+    $('.magazine .tab_title').click(function(){
+        let idx = $(this).index()+1;
 
-    var tween1 = TweenMax.to('.intro h2', 0.5, {
-        left: -800,
+        $('.tab_list').removeClass('active');
+        $('#a' + idx).addClass('active');
+
+        $('.tab_title').removeClass('active');
+        $(this).addClass('active');
+      });
+
+    // qna 메뉴 slideToggle
+    const question = $(".question");
+    question.click(function(){
+        
+        const answer = $(this).next(); 
+        const title = $(this).children(".title");
+        const icon = $(this).children(".icon");
+        
+        answer.stop().slideToggle(100,function(){
+            if(answer.is(':visible')) {
+                icon.stop().addClass("active");
+                title.stop().addClass("active");
+            } else {
+                icon.stop().removeClass("active");
+                title.stop().removeClass("active");
+            };
+        });
     });
 
-    var scene = new ScrollMagic.Scene({
-        triggerElement: ".intro",
-        duration: "100%"
-    })
-        .setTween(tween1)
-        .addTo(controller)
 
+    //product_item pro slideToggle
+    $(".product_list").click(function () {
+        // h = $(this).find(".product_content").height();
+        h = $(this).find(".product_content")
+        autoHeight = h.css({height:'auto',transition:'300'}).height();
 
-    //aside 아코디언 메뉴
-    $(".pro li").click(function () {
-        h = $(this).find(".con_wrap").height();
+        console.log(h)
 
-        if ($(this).find('.pro_con').height() > 0) {
-            $(".pro_con").stop().animate({
-                height: 0
-            }, 300)
-        } else {
-            $(".pro_con").stop().animate({
-                height: 0
-            }, 300)
-            $(this).find(".pro_con").stop().animate({
-                height: h
+        if (h.height() === 0) {
+            //만약에 높이가 0이면
+            h.height(autoHeight).stop().animate({
+                height: hh
             }, 300)
         }
     })
+    p_title = $(".product_title");
+    p_title.click(function(){
+        
+        const p_cont = $(this).next('.product_content');
+    
+        p_cont.stop().slideToggle(100);
+    });
 
 
     //recommand_pro
-    var swiper = new Swiper('.rec_slide', {
+    var swiper = new Swiper('.recommand_slide', {
         slidesPerView: 2.5,
         spaceBetween: 10,
         freeMode: true,
