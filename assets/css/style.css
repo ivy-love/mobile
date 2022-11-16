@@ -627,7 +627,8 @@
     margin-bottom: 15px;
 }
 .magazine .tab_item .tab_img {
-    width: 130px;
+    max-width: 130px;
+    width: 100%;
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
@@ -761,7 +762,7 @@
     transition: 0.1s;
 }
 .qna .qna_item .answer {
-    padding: 20px 10px 30px;
+    padding: 10px 10px 30px;
     font-size: 14px;
     display: none;
     line-height: 2;
