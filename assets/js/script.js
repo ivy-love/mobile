@@ -115,21 +115,7 @@ $(document).ready(function () {
     });
 
 
-    //product_item pro slideToggle
-    $(".product_list").click(function () {
-        // h = $(this).find(".product_content").height();
-        h = $(this).find(".product_content")
-        autoHeight = h.css({height:'auto',transition:'300'}).height();
-
-        console.log(h)
-
-        if (h.height() === 0) {
-            //만약에 높이가 0이면
-            h.height(autoHeight).stop().animate({
-                height: hh
-            }, 300)
-        }
-    })
+    //product_item slideToggle
     p_title = $(".product_title");
     p_title.click(function(){
         
