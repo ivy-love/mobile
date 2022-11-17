@@ -606,21 +606,20 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    height: 47px;
+    height: 56px;
     margin-bottom: 20px;
     padding-top: 10px;
     border-bottom: 1px solid #e4e5e8;
 }
 .magazine .tab_title  {
     width: 33.3%;
-    height: 30px;
+    height: 45px;
     font-size: 16px;
     font-weight: 500;
     border-bottom: none;
     color: #444;
 }
 .magazine .tab_title.active {
-    padding-bottom: 28px;
     border-bottom: 2px solid #000;
     font-weight: 600;
     color: #000;
