@@ -621,7 +621,7 @@
 }
 .magazine .tab_title.active {
     border-bottom: 2px solid #000;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 .magazine .tab_contents_wrap {
