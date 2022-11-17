@@ -333,13 +333,14 @@
     opacity: 1;
 }
 .main_slide .slide_txt .slide_title {
-    font-size: 42px;
+    min-width: 270px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 1.2;
     color: #fff;
     opacity: 0;
     margin-left: 20px;
-    transition: 0.2s ease-in 0.2s;
+    transition: 0.3s ease-in 0.3s;
 }
 .main_slide .slide_txt .sub_txt {
     padding-top: 30px;
@@ -348,7 +349,7 @@
     color: #fff;
     opacity: 0;
     margin-left: 20px;
-    transition: 0.3s ease-in 0.3s;
+    transition: 0.4s ease-in 0.4s;
 }
 
 /* prd_slide_container */
@@ -605,13 +606,14 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    min-height: 42px;
+    height: 42px;
     margin-bottom: 20px;
     padding-top: 10px;
     border-bottom: 1px solid #e4e5e8;
 }
 .magazine .tab_title  {
     width: 33.3%;
+    height: 28.4px;
     font-size: 16px;
     font-weight: 500;
     border-bottom: none;
