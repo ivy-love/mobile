@@ -339,7 +339,7 @@
     color: #fff;
     opacity: 0;
     margin-left: 20px;
-    transition: 0.4s ease-in 0.3s;
+    transition: 0.2s ease-in 0.2s;
 }
 .main_slide .slide_txt .sub_txt {
     padding-top: 30px;
@@ -348,7 +348,7 @@
     color: #fff;
     opacity: 0;
     margin-left: 20px;
-    transition: 0.4s ease-in 0.5s;
+    transition: 0.3s ease-in 0.3s;
 }
 
 /* prd_slide_container */
