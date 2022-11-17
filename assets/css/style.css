@@ -109,6 +109,15 @@
     margin: 11px auto 10px;
     font-weight: 600;
 }
+.mypage_list .mypage_item span::before {
+    content: "";
+    background: url(../img/direct_menu.png) no-repeat;
+    display: block;
+    width: 22px;
+    height: 20px;
+    margin: 11px auto 10px;
+    background-size: auto 66px;
+}
 .mypage_list .my span::before {
     content: "";
     display: block;
@@ -134,20 +143,17 @@
     justify-content: space-between;
     padding-left: 5px;
     border-bottom: 1px solid #d5d5d5;
-    letter-spacing: -.75px;
     font-size: 15px;
     font-weight: 600;
     line-height: 62px;
 }
 .product_item .icon {
-    float: right;
-    display: inline-block;
     background: url(../img/fold_icon_plus.png) no-repeat;
-    right: 5px;
     width: 11px;
     height: 11px;
     background-size: 11px 22px;
     margin-top: 26px;
+    margin: 26px 5px 0 0;
 }
 .product_content {
     padding-left: 15px;
@@ -314,24 +320,35 @@
 .main_slide img {
     width: 100%;
 }
-.slide_txt {
+.main_slide .slide_txt {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     padding: 0 10%;
 }
-.slide_txt .slide_title {
+.main_slide .swiper-slide-active .slide_txt .slide_title,
+.main_slide .swiper-slide-active .slide_txt .sub_txt {
+    margin-left: 0;
+    opacity: 1;
+}
+.main_slide .slide_txt .slide_title {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     color: #fff;
+    opacity: 0;
+    margin-left: 20px;
+    transition: 0.4s ease-in 0.3s;
 }
-.slide_txt .sub_txt {
+.main_slide .slide_txt .sub_txt {
     padding-top: 30px;
     font-size: 18px;
     line-height: 28px;
     color: #fff;
+    opacity: 0;
+    margin-left: 20px;
+    transition: 0.4s ease-in 0.5s;
 }
 
 /* prd_slide_container */
@@ -576,7 +593,7 @@
 
 /* magazine */
 .magazine {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     margin-bottom: 40px;
 }
 .magazine > .title {
@@ -589,19 +606,19 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    height: 34px;
     margin-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 1px solid #666;
 }
 .magazine .tab_title  {
-    padding-bottom: 8px;
-    margin: 0 16px;
+    width: 33.3%;
     font-size: 16px;
     font-weight: 500;
     border-bottom: none;
-    color: #000;
+    color: #444;
 }
 .magazine .tab_title.active {
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
     font-weight: 600;
     padding-bottom: 8px;
 }
@@ -609,6 +626,7 @@
     display: block;
     position: relative;
     overflow: hidden;
+    padding: 0 20px;
 }
 .magazine .tab_list {
     display: flex;
@@ -638,15 +656,21 @@
     margin-left: 15px;
 }
 .magazine .tab_item .title {
-    display: inline-block;
-    padding-bottom: 8px;
+    max-height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.2;
+    margin-bottom: 8px;
 }
 .magazine .tab_item .sub_title {
     font-size: 13px;
     font-weight: 500;
+    line-height: 1.3;
     color: #878484;
 }
 
@@ -746,6 +770,7 @@
     cursor: pointer;
 }
 .qna .qna_item .question .title {
+    width: 240px;
     font-size: 16px;
     line-height: 1.4;
 }
@@ -841,13 +866,14 @@ footer .notice_wrap .title {
     color: #666;
 }
 footer .notice_wrap .icon {
+    background: url(../img/btn_chevron_sml.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
     position: absolute;
-    top: 19px;
+    top: 17px;
     right: 5px;
-    width: 5px;
-    height: 7px;
-    background-position: -134px -14px;
-    background-size: 300px;
+    width: 7px;
+    height: 9px;
 }
 footer .inquiry_wrap {
     display: flex;

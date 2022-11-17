@@ -40,23 +40,6 @@ a {
     margin: -1px;
     overflow: hidden;
 }
-.mypage_list .mypage_item span::before {
-    content: "";
-    background: url(../img/comm_btn_direct_menu.png) no-repeat;
-    display: block;
-    width: 22px;
-    height: 20px;
-    margin: 11px auto 10px;
-    background-size: auto 66px;
-}
-.mebership ul li:nth-child(1) .mem_icon,
-.mebership ul li:nth-child(2) .mem_icon,
-.mebership ul li:nth-child(3) .mem_icon,
-.mebership ul li:nth-child(4) .mem_icon,
-footer .notice_wrap .icon {
-    background: url(../img/common_icon.png) no-repeat;
-    background-size: 300px;
-}
 .aside_sns_wrap .sns_item {
     background: url(../img/btn_social.png) no-repeat;
     width: 30px;
