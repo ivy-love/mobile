@@ -114,6 +114,14 @@ $(document).ready(function () {
         });
     });
 
+    // aside_container 스크롤 했을 때 하단 그림자 추가
+    $('.aside_container').scroll(function() {
+        if($('.aside_container').scrollTop() > 0) {
+            $('.aside_header').addClass('active');
+        } else {
+            $('.aside_header').removeClass('active');
+        }
+    });
 
     //product_item slideToggle
     p_title = $(".product_title");
@@ -123,7 +131,6 @@ $(document).ready(function () {
     
         p_cont.stop().slideToggle(100);
     });
-
 
     //recommand_pro
     var swiper = new Swiper('.recommand_slide', {
