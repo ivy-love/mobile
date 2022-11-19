@@ -28,7 +28,7 @@
 }
 
 /* aside */
-.aside_container {
+.aside_wrap {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -352,8 +352,8 @@
     line-height: 1.2;
     color: #fff;
     opacity: 0;
-    margin-left: 20px;
-    transition: 0.3s ease-in 0.3s;
+    margin-left: 35px;
+    transition: 0.5s ease-in 0.5s;
 }
 .main_slide .slide_txt .sub_txt {
     padding-top: 30px;
@@ -361,12 +361,12 @@
     line-height: 28px;
     color: #fff;
     opacity: 0;
-    margin-left: 20px;
-    transition: 0.4s ease-in 0.4s;
+    margin-left: 35px;
+    transition: 0.7s ease-in 0.7s;
 }
 
-/* prd_slide_container */
-.prd_slide_container {
+/* prd_slide_wrap */
+.prd_slide_wrap {
     position: relative;
     margin-bottom: 45px;
 }
@@ -785,6 +785,7 @@
     cursor: pointer;
 }
 .qna .qna_item .question .title {
+    display: inline-block;
     padding-right: 20px;
     font-size: 16px;
     line-height: 1.4;
@@ -802,7 +803,7 @@
 }
 .qna .qna_item .icon.active {
     transform: rotate(360deg);
-    transition: 0.1s;
+    transition: linear 0.2s;
 }
 .qna .qna_item .answer {
     padding: 10px 10px 30px;
@@ -881,6 +882,8 @@ footer .notice_wrap .title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    line-height: 14px;
+    vertical-align: bottom;
     margin-left: 10px;
     font-size: 12px;
     color: #666;
