@@ -800,6 +800,7 @@
     height: 7px;
     transform: rotate(180deg);
     transition: 0.1s;
+    overflow: hidden;
 }
 .qna .qna_item .icon.active {
     transform: rotate(360deg);
@@ -882,7 +883,7 @@ footer .notice_wrap .title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: 13px;
+    line-height: 12px;
     vertical-align: bottom;
     margin-left: 10px;
     font-size: 12px;
