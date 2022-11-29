@@ -418,29 +418,33 @@
     padding: 0 13px 0 12px;
 }
 .prd_slide .txt_wrap .brand {
+    height: 50px;
+    line-height: 50px;
     margin-bottom: 8px;
     position: relative;
 }
 .prd_slide .txt_wrap .brand .brand_name {
-    font-size: 11px;
-    color: #888;
+    font-size: 15px;
+    color: #444;
 }
 .prd_slide .txt_wrap .brand .fav_icon {
     background: url(../img/btn_favorite.png) no-repeat;
     background-size: auto 15px;
-    background-position: left top;
+    background-position: center;
     width: 17px;
     height: 17px;
     position: absolute;
     top: calc(100% - 14px);
     right: 0;
+    padding: 25px;
 }
 .prd_slide .txt_wrap .brand .fav_icon.click {
     background: url(../img/btn_favorite_clicked.png) no-repeat;
     background-size: auto 15px;
-    background-position: left top;
+    background-position: center;
     width: 17px;
     height: 17px;
+    padding: 25px;
 }
 .prd_slide .txt_wrap .prd_content_title {
     display: inline-block;
