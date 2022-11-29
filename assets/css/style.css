@@ -418,8 +418,8 @@
     padding: 0 13px 0 12px;
 }
 .prd_slide .txt_wrap .brand {
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
     margin-bottom: 8px;
     position: relative;
 }
@@ -434,9 +434,8 @@
     width: 17px;
     height: 17px;
     position: absolute;
-    top: calc(100% - 14px);
+    top: 6px;
     right: 0;
-    padding: 25px;
 }
 .prd_slide .txt_wrap .brand .fav_icon.click {
     background: url(../img/btn_favorite_clicked.png) no-repeat;
@@ -444,7 +443,6 @@
     background-position: center;
     width: 17px;
     height: 17px;
-    padding: 25px;
 }
 .prd_slide .txt_wrap .prd_content_title {
     display: inline-block;
