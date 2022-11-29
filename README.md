@@ -16,7 +16,6 @@ CSS 클래스명을 지을 때 한 눈에 알아볼 수 있도록 직관적으�
 디자인 100% - 퍼블리싱 100%
 
 # 사용한 Skill & Tool
-
 - **HTML**
 - **CSS**
 - **JQuery&Javascript**
