@@ -1,16 +1,18 @@
-$(document).ready(function () {
+ $(document).ready(function () {
 
-    //btn_menu animate
+    //햄버거버튼 animate 및 body 스크롤 안 보이도록 감추기
     $(".btn_menu").click(function () {
         $('.aside_wrap').stop().animate({
             right: '0'
         }, 200, 'easeOutQuart');
+        $('body').addClass('hidden')
     });
 
     $(".btn_close").click(function () {
         $('.aside_wrap').stop().animate({
             right: '-100%'
         }, 50, 'easeOutQuart');
+        $('body').removeClass('hidden');
     });
 
     //main_slide swiper

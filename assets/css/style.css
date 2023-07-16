@@ -39,6 +39,9 @@
     overflow: hidden;
     overflow-y: auto;
 }
+.hidden {
+    overflow: hidden;
+}
 .aside_header {
     position: sticky;
     width: 100%;
